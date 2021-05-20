@@ -1,0 +1,87 @@
+
+  <!DOCTYPE html>
+  <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width">
+     <html>
+      <head>
+         <script type="text/javascript" src="js/cookie.js"></script>
+        <title>Germ Clicker Game!</title>
+         <link rel = "stylesheet" href = "style.css"/>
+      </head>
+
+      <body>
+         <div id = "space"></div>
+          <div id = "cookie" onclick="cookieClick()">
+             <img src="data:image/png;base64,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" width="200px"/>
+          </div>
+          
+         <p>Number of Germs:</p>
+         
+         <div id = "numbers"></div>
+        <div id= "upgradeLevel"></div>
+
+          <p>Intructions: Click the Germs - this makes you Germs/Money/Currency.</p>
+         <p>You will AUTOMATICALLY upgrade according the following table of upgrade costs! :)</p>
+
+         <table>
+              <tr>
+                <td>Name</td>
+                <td>How many Germs can it make?</td>
+                 <td>cost</td>
+             </tr>
+             
+             <tr>
+                 <td>Granny!</td>
+                 <td>Granny make 2x's as much!</td>
+                 <td>30 Germs!</td>
+              </tr>
+              
+           <tr>
+                <td>Factory</td>
+              <td> Factory makes 10x's as much!</td>
+                <td>500 Germs!</td>
+              </tr>
+             
+             <tr>
+                  <td>Plant</td>
+                <td> Plant makes 30x's as much!</td>
+                <td>1,000 Germs!</td>
+             </tr>
+             
+              <tr>
+                  <td>SuperPlant</td>
+                  <td> SuperFactory makes 1000x's as much!</td>
+                  <td>100,000 Germs!</td>
+              </tr>
+	            <tr>
+                <td>SuperUltraPlant</td>
+                <td>SuperUltraFactory makes 5000x's as much!</td>
+               <td>500,000 Germs!</td>
+              <tr>
+              <td>Patient</td>
+              <td>Patient makes 8000x's as much</td>
+              <td>800,000 Germs</td>
+              </tr>
+             <tr>
+              <td>Doctor</td>
+              <td>Doctor makes 10000x's as much</td>
+              <td>1,000,000 Germs</td>
+              </tr>
+              <tr>
+              <td>Er Doctor</td>
+              <td>Er Doctor makes 20000x's as much</td>
+              <td>1, 155, 170 Germs</td>
+              </tr>
+             <td>Ultra Robot Doctor</td>
+             <td>Ultra Robot Doctor makes 30000x's as much</td>
+             <td>1, 600, 500 Germs</td>
+          </table>
+      </body>
+  </html>
+      <title>Germ Clicker</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <script src="script.js"></script>
+    </body>	
+  </html>
